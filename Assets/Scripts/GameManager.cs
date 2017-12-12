@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour
 
 	#region System
 
+		void Reset()
+		{
+			m_listAvatar = m_randomAvatar.GetAllAvatar("Avatar");
+		}
+
 		void Awake()
 		{
 			m_iconsPanel = new IconsPanel();

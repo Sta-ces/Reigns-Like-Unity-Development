@@ -364,11 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49890e2a013255a43842111a0bf72ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_peopleText:
-  - namePerson: Clown
-    textPerson: Do you want a joke ?
-  - namePerson: Queen
-    textPerson: Do you want a drink ?
+  m_peopleText: []
   m_percentDebut: 50
   m_iconPanel: {fileID: 554946859}
 --- !u!1 &323176467
