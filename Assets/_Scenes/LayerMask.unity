@@ -150,7 +150,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 4294967294
+    m_Bits: 4294967295
+  peopleInfo:
+    name: Richard
+    text: gbeoitgeo
+    age: 21
+  debug: '{"name":"Richard","text":"gbeoitgeo","age":21}'
+  import: 
 --- !u!1 &1717657522
 GameObject:
   m_ObjectHideFlags: 0
