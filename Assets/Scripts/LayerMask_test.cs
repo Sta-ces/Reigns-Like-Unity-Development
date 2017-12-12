@@ -7,6 +7,11 @@ public class LayerMask_test : MonoBehaviour
 	#region Public Members
 
 		public LayerMask mask = -1;
+		public PeopleText player;
+
+		[Header("Debug Json")]
+		public string debug;
+		public string import;
 
 	#endregion
 
@@ -18,17 +23,14 @@ public class LayerMask_test : MonoBehaviour
 
 		void Awake()
 		{
-			/*for(int i = 0; i < 10; i++)
-			{
-				Debug.Log(LayerMask.LayerToName(i));
-			}*/
-
-			PeopleText _pt = new PeopleText();
+			PeopleText _pt = player;
 			_pt.Name = "Albert";
 			_pt.Age = 83;
 			string _text = _pt.SaveToString();
+			PeopleText _json = _pt.CreateFromJSON(_text);
 			Debug.Log(_text);
-			Debug.Log(_pt.CreateFromJSON(_text));
+			Debug.Log(_json.name);
+			debug = _text;
 		}
 
 	#endregion
@@ -39,5 +41,14 @@ public class LayerMask_test : MonoBehaviour
 
 	#region Private and Protected Members
 
+		public void OnValidate(){
+
+			// import  
+			Debug.Log("Hello:"+import);
+			import=null;
+
+		}
+
 	#endregion
+
 }
